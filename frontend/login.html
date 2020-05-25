@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiTA</title>
+    <link rel = "icon" href =  "./ImagesUsed/orange bike.png" type = "image/x-icon">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./RItA.css">
+    <style> 
+    body {background-image: url("./ImagesUsed/motorbike.jpg");
+          background-size: cover;} 
+    </style>
+</head>
+<body>
+<div class="loginBox">
+    <img src ="./ImagesUsed/orange bike.png" class= "user">
+    <h2><a href="LandingPage.html"></a>Welcome to RItA</h2>
+    <form>
+      <p>Email</p>
+      <input id="loginemail" type= "text" name =""placeholder="Enter Email">
+      <p>Designation</p>
+              <select class="form-control" id="selector">
+                <option selected>Choose...</option>
+                <option>Recruiter</option>
+                <option>Safebodastaff</option>
+                <option>Rider</option>
+              </select>
+      <p>Password</p>
+      <input id="loginpassword" type= "password" name =""placeholder="******"> 
+      <a href="SafeBodaPortal.html" id="loginsubmit" type="submit" class="button btn btn-warning btn-lg">Signin</a>
+    </form>
+    <div class="newuser">
+      <p>New to the Safeboda family, <a href ="SignUpForm.html">Sign up</a></p>
+    </div>
+    </div>
+    <script src="loginscript.js"></script>
+    </body>
