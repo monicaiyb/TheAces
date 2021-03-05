@@ -13,14 +13,23 @@
     </style>
 </head>
 <body>
-  
+  <div class="topnav">
+    <nav>
+      <p class="float-left">RiTA</p>
+      <a class="active float-right" href="">Join</a>
+      <a class="active float-right"href="">News</a>
+      <a class="active float-right"href="">About</a>
+      <a class="active float-right"href="">Contact</a>
+      </nav>
+  </div>
     <div class="container">
       
         <div id="welcomes">
         <h4>Welcome to the Safeboda Family</h4>
         <h6>Please fill out the following fields carefully</h6>
         </div>
-        <form action="RegistrationForm.html">
+        <div class="loginBox">
+          <form>
             <div class = "signupform col-md-8">
             <div class="form-group col-md-8">
                 <label class="mt-4"> Full Names</label>
@@ -44,7 +53,7 @@
                   Accept Terms and Conditions
                 </label>
               </div>
-              <a href='./RegistrationForm.html'>
+              <a href="" id="registerbtn" type="submit" class="button btn btn-warning btn-lg"></a>
               Join the tribe!</a>
               <div class="olduser">
                 <p>Already registered, <a href ="./login.html">Login</a></p>
@@ -54,6 +63,8 @@
             
                   
           </form>
+        </div>
+        
     </div>
     <script src="signup.js"></script>
   </body>
