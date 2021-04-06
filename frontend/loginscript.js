@@ -7,17 +7,18 @@ const selectedInput=document.getElementById("selector")
 const passwordInput=document.getElementById("loginpassword");
 const loginBtn=document.getElementById("login_submit");
      
-    loginBtn.addEventListener("click",(event)=>{
+loginBtn.addEventListener("click",(event)=>{
     event.preventDefault();
         
-        const getInputValue=(element)=>{
+    const getInputValue=(element)=>{
         return element.value;
         }
 
     const elementValue=element.value
     if (elementValue===""){
         alert("Please fill in both email and password fields");
-    }else{
+    }
+    else{
     
         const emailValue=getInputValue(emailInput);
         const selectedValue=getInputValue(selectedInput);

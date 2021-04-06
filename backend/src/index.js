@@ -1,10 +1,10 @@
 const express = require('express');
 const cors =require("cors");
 const bodyParser = require('body-parser')
-const userRouter = require('./views/userViews.js');
-const driverRouter=require('./views/driverViews');
+const userRouter = require('./routes/userRoutes');
+const driverRouter=require('./routes/driverRoutes');
 const port = process.env.PORT || 3000;
-require('./db/db');
+// require('./db/db');
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(userRouter);
 app.use(driverRouter);
 
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.status(200).send({message:'Hello World!'});
 });
 
